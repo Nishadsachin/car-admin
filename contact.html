@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | FleetNest</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg py-3">
+      <div class="container">
+        <a class="navbar-brand brand-wrap" href="index.html">
+          <div class="brand-logo">FN</div>
+          <div class="brand-copy">
+            <span>FleetNest</span>
+          </div>
+        </a>
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav mx-auto gap-lg-4">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contactForm">Book Demo</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+          </ul>
+          <div class="header-actions d-flex flex-column flex-lg-row gap-3">
+            <a href="#" class="btn btn-outline-primary btn-soft">Login</a>
+            <a href="#contactForm" class="btn btn-primary btn-strong">Book Demo</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="hero-glow glow-left"></div>
+      <div class="hero-glow glow-right"></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5">
+            <span class="eyebrow reveal-in">Contact FleetNest</span>
+            <h1 class="hero-title">
+              Book a demo
+              <span class="title-accent">or get in touch</span>
+            </h1>
+            <p class="hero-copy reveal-in">
+              Experience FleetNest's all-in-one cloud platform designed for taxi operators and fleet owners.
+              Our team will show you how to automate duties, GST billing, reporting, and vehicle allocation in minutes.
+            </p>
+            <div class="contact-points reveal-in">
+              <div class="contact-chip">
+                <strong>Email</strong>
+                <span>demo@fleetnest.io</span>
+              </div>
+              <div class="contact-chip">
+                <strong>Phone</strong>
+                <span>+44 20 8123 4567</span>
+              </div>
+              <div class="contact-chip">
+                <strong>Hours</strong>
+                <span>Mon - Fri, 9:00 AM - 6:00 PM GMT</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="form-shell reveal-in" id="contactForm">
+              <form class="contact-form dynamic-form" data-form-name="contact-page-demo">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label for="contactFirstName" class="form-label">First Name *</label>
+                    <input id="contactFirstName" type="text" class="form-control custom-field" placeholder="Jane" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactLastName" class="form-label">Last Name *</label>
+                    <input id="contactLastName" type="text" class="form-control custom-field" placeholder="Doe" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactCompany" class="form-label">Company Name *</label>
+                    <input id="contactCompany" type="text" class="form-control custom-field" placeholder="FleetNest Inc." required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label">Email Address *</label>
+                    <input id="contactEmail" type="email" class="form-control custom-field" placeholder="name@company.in" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactPhone" class="form-label">Mobile Number *</label>
+                    <input id="contactPhone" type="tel" class="form-control custom-field" placeholder="9876543210" inputmode="numeric" maxlength="10" pattern="[0-9]{10}" data-phone-input required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="fleetSizePage" class="form-label">Fleet Size *</label>
+                    <select id="fleetSizePage" class="form-select custom-field" data-fleet-select required>
+                      <option value="1-10 vehicles" selected>1-10 vehicles</option>
+                      <option value="11-50 vehicles">11-50 vehicles</option>
+                      <option value="51-200 vehicles">51-200 vehicles</option>
+                      <option value="201+ vehicles">201+ vehicles</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="cityField" class="form-label">City *</label>
+                    <input id="cityField" type="text" class="form-control custom-field" placeholder="Mumbai" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactMethodPage" class="form-label">Preferred Contact Method</label>
+                    <select id="contactMethodPage" class="form-select custom-field" data-contact-method>
+                      <option value="email" selected>Email</option>
+                      <option value="phone">Phone</option>
+                      <option value="whatsapp">WhatsApp</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="interestArea" class="form-label">Main Interest</label>
+                    <select id="interestArea" class="form-select custom-field" data-interest-select>
+                      <option value="bookings" selected>Bookings & Dispatch</option>
+                      <option value="billing">GST Billing</option>
+                      <option value="drivers">Driver Management</option>
+                      <option value="analytics">Reports & Analytics</option>
+                    </select>
+                  </div>
+                  <div class="col-12">
+                    <div class="dynamic-note" data-dynamic-note>
+                      A focused walkthrough will be tailored for smaller teams that want faster booking and dispatch control.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea id="contactMessage" class="form-control custom-field custom-area" rows="5" placeholder="Tell us about your current workflow and what you'd like to improve."></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary btn-strong w-100 submit-btn">Send Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space">
+      <div class="container">
+        <div class="section-heading reveal-in">
+          <span class="eyebrow">Get In Touch</span>
+          <h2 class="section-title">Choose the fastest way to reach us</h2>
+          <p class="section-copy">Whether you want a full demo, onboarding guidance, or product answers, our team is ready to help.</p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="info-card reveal-in">
+              <h3>Direct Support</h3>
+              <p>demo@fleetnest.io</p>
+              <p>+44 20 8123 4567</p>
+              <p>Mon - Fri, 9:00 AM - 6:00 PM GMT</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card reveal-in">
+              <h3>Global Offices</h3>
+              <p>Headquarters<br>London, United Kingdom</p>
+              <p>Remote support available worldwide</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="info-card reveal-in">
+              <h3>Request a Demo</h3>
+              <p>Fill out the form and our team will tailor a walkthrough around your fleet size, workflow, and priorities.</p>
+              <a href="#contactForm" class="btn btn-primary btn-strong w-100 mt-3">Book Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand-col">
+            <a class="brand-wrap footer-brand" href="index.html">
+              <div class="brand-logo">FN</div>
+              <div class="brand-copy">
+                <span>FleetNest</span>
+              </div>
+            </a>
+            <p class="footer-copy">
+              Streamline your fleet operations with FleetNest. The all-in-one cloud platform for taxi operators and fleet owners.
+            </p>
+          </div>
+          <div class="footer-contact-col">
+            <h3>Contact</h3>
+            <a href="mailto:demo@fleetnest.io">demo@fleetnest.io</a>
+            <a href="tel:+442081234567">+44 20 8123 4567</a>
+            <p>123 Fleet Management Way, London, UK</p>
+          </div>
+          <div class="footer-social-col">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#" aria-label="Facebook">Fb</a>
+              <a href="#" aria-label="Instagram">Ig</a>
+              <a href="#" aria-label="YouTube">Yt</a>
+              <a href="#" aria-label="X">X</a>
+              <a href="#" aria-label="LinkedIn">In</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 FleetNest. All rights reserved.</p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
