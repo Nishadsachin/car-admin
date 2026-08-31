@@ -1,508 +1,228 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FleetNest Admin Panel</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="FleetNest is the all-in-one fleet operations platform for bookings, dispatch, drivers, vehicles, billing, and business insights.">
+  <meta name="theme-color" content="#07152f">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FleetNest — One platform to run your fleet">
+  <meta property="og:description" content="Bookings, dispatch, drivers, vehicles, billing and insights in one calm command center.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FleetNest — One platform to run your fleet">
+  <meta name="twitter:description" content="Bookings, dispatch, drivers, vehicles, billing and insights in one calm command center.">
+  <title>FleetNest — One platform to run your fleet</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <nav class="navbar navbar-expand-lg py-3">
-      <div class="container">
-        <a class="navbar-brand brand-wrap" href="#home">
-          <div class="brand-logo">FN</div>
-          <div class="brand-copy">
-            <span>FleetNest</span>
-          </div>
-        </a>
-        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav mx-auto gap-lg-4">
-            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-            <li class="nav-item"><a class="nav-link" href="features.html">Features</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contact">Book Demo</a></li>
-            <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
-          </ul>
-          <div class="header-actions d-flex flex-column flex-lg-row gap-3">
-            <a href="#" class="btn btn-outline-primary btn-soft">Login</a>
-            <a href="#demo" class="btn btn-primary btn-strong">Book Demo</a>
-          </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" data-header>
+    <div class="nav-wrap">
+      <a class="brand" href="#top" aria-label="FleetNest home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>FleetNest</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation"><span></span><span></span></button>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#platform">Platform</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#company">Company</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="text-link" href="https://uat.fleetnest.in">Log in</a>
+        <a class="btn button button-small" href="#contact">Book a demo <span aria-hidden="true">↗</span></a>
       </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <a href="#platform">Platform</a><a href="#solutions">Solutions</a><a href="#pricing">Pricing</a><a href="#company">Company</a><a href="#contact">Book a demo</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero-section" id="home">
-      <div class="container">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <div class="hero-kicker reveal-in">Smart Fleet Admin Software</div>
-            <h1 class="hero-title">
-              Manage Your Entire Fleet
-              <span class="title-accent">From One Platform</span>
-            </h1>
-            <p class="hero-text">
-              FleetNest helps taxi operators and fleet owners manage bookings, duties, drivers, vehicles,
-              suppliers, invoices, expenses, reports, GST billing, purchase invoices, and business analytics
-              with one powerful cloud platform.
-            </p>
-            <div class="hero-metrics reveal-in">
-              <div class="metric-pill">
-                <strong>99.2%</strong>
-                <span>Booking uptime</span>
-              </div>
-              <div class="metric-pill">
-                <strong>24/7</strong>
-                <span>Live visibility</span>
-              </div>
-              <div class="metric-pill">
-                <strong>3x</strong>
-                <span>Faster ops flow</span>
-              </div>
-            </div>
-            <div class="hero-actions d-flex flex-column flex-sm-row gap-3">
-              <a href="#demo" class="btn btn-primary btn-strong large-btn">Book a Demo</a>
-              <a href="#pricing" class="btn btn-outline-primary btn-soft large-btn">Start Free Trial</a>
-            </div>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow glow-one" aria-hidden="true"></div>
+      <div class="hero-glow glow-two" aria-hidden="true"></div>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Built for modern fleet businesses</div>
+          <h1>Every moving part.<br><em>One calm command center.</em></h1>
+          <p class="hero-lede">FleetNest connects bookings, dispatch, drivers, vehicles, suppliers and billing—so your team can move faster without chasing spreadsheets.</p>
+          <div class="hero-actions">
+            <a class="btn button" href="#contact">Book a free demo <span aria-hidden="true">↗</span></a>
+            <a class="btn button button-ghost" href="#platform"><span class="play" aria-hidden="true">▶</span> See how it works</a>
           </div>
-          <div class="col-lg-6">
-            <div class="device-stage reveal-in">
-              <div class="floating-badge badge-top">Live Trips 148</div>
-              <div class="floating-badge badge-bottom">Driver Online 82%</div>
-              <div class="screen-shell">
-                <div class="screen-top">
-                  <span></span><span></span><span></span>
+          <div class="hero-proof">
+            <div class="avatars" aria-hidden="true"><span>AK</span><span>CR</span><span>+8</span></div>
+            <p><strong>Made for India’s fleet operators</strong><br>From first booking to final invoice.</p>
+          </div>
+        </div>
+
+        <div class="product-stage" aria-label="Concept preview of FleetNest Duty Operations">
+          <div class="stage-ring ring-a" aria-hidden="true"></div>
+          <div class="stage-ring ring-b" aria-hidden="true"></div>
+          <div class="concept-product-shell">
+            <div class="product-window-bar"><span class="window-dots" aria-hidden="true"><i></i><i></i><i></i></span><strong>FleetNest Workspace</strong><em>CONCEPT PREVIEW</em></div>
+            <div class="concept-app">
+              <aside class="concept-sidebar" aria-hidden="true"><b>FN</b><i class="active">⌂</i><i>▦</i><i>◇</i><i>₹</i><i>◫</i></aside>
+              <div class="concept-workspace">
+                <div class="concept-heading"><div><small>DUTY MANAGEMENT</small><h2>Duty Operations</h2></div><button type="button">+ New duty</button></div>
+                <div class="concept-stats"><span><small>Today</small><strong>18 duties</strong></span><span><small>In progress</small><strong>6 duties</strong></span><span><small>Completed</small><strong>9 duties</strong></span></div>
+                <div class="concept-board">
+                  <div class="concept-filters"><span class="active">All duties</span><span>Booked</span><span>Assigned</span><span>Dispatched</span><span>Closed</span></div>
+                  <div class="concept-duty"><b>#D-1048</b><span><strong>Airport → Business District</strong><small>Sedan · Today, 09:30</small></span><em class="concept-pill blue-pill">Assigned</em></div>
+                  <div class="concept-duty"><b>#D-1047</b><span><strong>City Centre → Pune</strong><small>SUV · Today, 08:45</small></span><em class="concept-pill green-pill">In progress</em></div>
+                  <div class="concept-duty"><b>#D-1046</b><span><strong>Hotel → Railway Station</strong><small>Sedan · Today, 07:20</small></span><em class="concept-pill gray-pill">Closed</em></div>
                 </div>
-                <div class="screen-body">
-                  <aside class="screen-sidebar">
-                    <div class="side-dot active"></div>
-                    <div class="side-dot"></div>
-                    <div class="side-dot"></div>
-                    <div class="side-dot"></div>
-                  </aside>
-                  <div class="screen-content">
-                    <div class="content-head">
-                      <div>
-                        <h3>Fleet Fleet</h3>
-                        <p>Vehicle control dashboard</p>
-                      </div>
-                      <button class="mini-button">Scope</button>
-                    </div>
-                    <div class="content-grid">
-                      <div class="ui-card tall"></div>
-                      <div class="ui-card"></div>
-                      <div class="ui-card"></div>
-                      <div class="ui-card"></div>
-                      <div class="ui-card chart-card"></div>
-                      <div class="ui-card"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="phone-shell">
-                <div class="phone-notch"></div>
-                <div class="phone-ring"></div>
-                <div class="phone-lines"></div>
               </div>
             </div>
           </div>
+          <div class="float-card float-trip">
+            <span class="float-icon">✓</span><div><small>From booking to closure</small><strong>One duty workflow</strong></div>
+          </div>
+          <div class="float-card float-driver">
+            <span class="driver-pic">FN</span><div><small>Built into FleetNest</small><strong>Real-time operations view</strong></div><span class="status-dot"></span>
+          </div>
+        </div>
+      </div>
+      <div class="trust-row">
+        <span>ONE WORKSPACE FOR</span>
+        <strong>Taxi operators</strong><i></i><strong>Travel agencies</strong><i></i><strong>Car rentals</strong><i></i><strong>Corporate fleets</strong>
+      </div>
+    </section>
+
+    <section class="section promise-section" id="company">
+      <div class="section-shell">
+        <div class="section-heading split-heading">
+          <div><span class="section-kicker">THE OPERATING SYSTEM FOR YOUR FLEET</span><h2>Less chasing.<br>More moving.</h2></div>
+          <p>Fleet operations are complex. Your software should not be. FleetNest gives every team a shared, real-time view—from the first customer request to the final payment.</p>
+        </div>
+        <div class="promise-grid">
+          <article class="promise-card promise-featured">
+            <div class="promise-number">01</div><div class="promise-icon">⌁</div>
+            <h3>See the whole operation</h3><p>Bookings, live duties, vehicles, drivers and exceptions in one calm view.</p>
+            <div class="mini-operations" aria-hidden="true">
+              <div class="mini-row"><span class="mini-avatar">MP</span><div><b>Mumbai → Pune</b><small>MH 01 CV 4821 · 08:40</small></div><em class="tag live">Live</em></div>
+              <div class="mini-row"><span class="mini-avatar mint">AS</span><div><b>Airport → BKC</b><small>MH 02 ER 1448 · 09:15</small></div><em class="tag soon">Soon</em></div>
+            </div>
+          </article>
+          <article class="promise-card"><div class="promise-number">02</div><div class="promise-icon">↯</div><h3>Automate the handoffs</h3><p>Move work smoothly from booking to dispatch, duty slip, billing and collections.</p><a href="#platform">Explore workflows <span>→</span></a></article>
+          <article class="promise-card"><div class="promise-number">03</div><div class="promise-icon">◫</div><h3>Trust every number</h3><p>Turn live operational data into accurate invoices, reports and better decisions.</p><a href="#platform">Explore insights <span>→</span></a></article>
         </div>
       </div>
     </section>
 
-    <section class="marquee-band">
-      <div class="container">
-        <div class="marquee-text">
-          <span>RT · TRAVEL AGENCIES · CAR RENTAL COMPANIES · FLEETNEST · TAXI OPERATORS · TRANSPORT MANAGEMENT ·</span>
-          <span>RT · TRAVEL AGENCIES · CAR RENTAL COMPANIES · FLEETNEST · TAXI OPERATORS · TRANSPORT MANAGEMENT ·</span>
+    <section class="section platform-section" id="platform">
+      <div class="section-shell">
+        <div class="section-heading centered-heading">
+          <span class="section-kicker light-kicker">ONE CONNECTED PLATFORM</span>
+          <h2>Work flows better when<br><em>everything works together.</em></h2>
+          <p>Switch from daily operations to finance and performance without switching systems.</p>
         </div>
-      </div>
-    </section>
-
-    <section class="feature-intro section-space" id="about">
-      <div class="container">
-        <h2 class="section-title wide-title">Enterprise Fleet Control</h2>
-        <p class="section-subtitle">
-          Streamline operations with a unified cloud platform designed for the modern transport industry.
-        </p>
-        <div class="row g-4 feature-row">
-          <div class="col-md-4">
-            <div class="feature-box reveal-in">
-              <div class="icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <rect x="3" y="5" width="18" height="16" rx="2"></rect>
-                  <path d="M16 3v4M8 3v4M3 10h18"></path>
-                  <path d="M8 14h3M8 18h8"></path>
-                </svg>
-              </div>
-              <h3>Booking Management</h3>
-              <p>Automate vehicle allocation and customer bookings with a seamless, real-time interface.</p>
-            </div>
+        <div class="platform-browser">
+          <div class="browser-bar"><div class="browser-dots"><i></i><i></i><i></i></div><div class="browser-address"><span></span> FleetNest product tour</div><div class="browser-user">FN</div></div>
+          <div class="platform-tabs" role="tablist" aria-label="FleetNest platform areas">
+            <button type="button" role="tab" aria-selected="true" aria-controls="panel-operations" id="tab-operations" data-platform-tab="operations"><span>01</span>Duty Operations</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="panel-insights" id="tab-insights" data-platform-tab="insights"><span>02</span>Reports</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="panel-plans" id="tab-plans" data-platform-tab="plans"><span>03</span>Plans &amp; Pricing</button>
           </div>
-          <div class="col-md-4">
-            <div class="feature-box reveal-in">
-              <div class="icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <circle cx="12" cy="12" r="8"></circle>
-                  <path d="M12 8v5l3 2"></path>
-                  <path d="M3 12h2M19 12h2M12 3v2M12 19v2"></path>
-                </svg>
-              </div>
-              <h3>Duty Operations</h3>
-              <p>Efficient duty management and driver scheduling to maximize fleet utilization and productivity.</p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="feature-box reveal-in">
-              <div class="icon-wrap">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                  <path d="M3 16l4-5 4 3 4-6 6 8"></path>
-                  <circle cx="7" cy="16" r="2"></circle>
-                  <circle cx="17" cy="16" r="2"></circle>
-                </svg>
-              </div>
-              <h3>Vehicle Allocation</h3>
-              <p>Dynamic vehicle assignment based on location, availability, and driver performance metrics.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="empower-section section-space" id="features">
-      <div class="container">
-        <div class="row g-5">
-          <div class="col-lg-4">
-            <h2 class="section-title stacked-title">Empower Your Business</h2>
-          </div>
-          <div class="col-lg-8">
-            <div class="benefit-list">
-              <div class="benefit-item reveal-in">
-                <div class="icon-wrap small-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <path d="M6 3h9l5 5v13H6z"></path>
-                    <path d="M15 3v5h5M9 13h6M9 17h6M9 9h3"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3>Increased Productivity</h3>
-                  <p>Streamline operations with a single, intuitive dashboard designed for maximum efficiency and speed.</p>
-                </div>
-              </div>
-              <div class="benefit-item reveal-in">
-                <div class="icon-wrap small-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <rect x="4" y="4" width="16" height="16" rx="2"></rect>
-                    <path d="M8 8h8M8 12h8M8 16h5"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3>Automated Billing</h3>
-                  <p>Eliminate manual data entry with automated GST billing and purchase invoice generation for your fleet.</p>
-                </div>
-              </div>
-              <div class="benefit-item reveal-in">
-                <div class="icon-wrap small-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-                    <path d="M4 19h16"></path>
-                    <path d="M7 16V9M12 16V5M17 16v-3"></path>
-                    <path d="M6 9l2-2 2 1 4-4 2 2 3-3"></path>
-                  </svg>
-                </div>
-                <div>
-                  <h3>Real-Time Reports</h3>
-                  <p>Track revenue, expenses, bookings, and performance using live analytics for better business decisions.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="showcase-section section-space" id="demo">
-      <div class="container">
-        <div class="showcase-frame reveal-in">
-          <div class="showcase-inner">
-            <div class="showcase-laptop">
-              <div class="showcase-sidebar"></div>
-              <div class="showcase-main">
-                <div class="showcase-toolbar"></div>
-                <div class="showcase-cards">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-              </div>
-            </div>
-            <div class="showcase-phone"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="pricing-section section-space" id="pricing">
-      <div class="container">
-        <h2 class="section-title text-center">Choose Your Plan</h2>
-        <div class="row g-4 plan-row mt-4">
-          <div class="col-md-4">
-            <div class="plan-card reveal-in">
-              <h3>Starter</h3>
-              <div class="plan-price">₹1,999<span>/month</span></div>
-              <p>For small taxi operators starting with core bookings and vehicle control.</p>
-              <ul class="plan-list">
-                <li>Booking dashboard</li>
-                <li>Driver and vehicle records</li>
-                <li>Basic reports</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline-primary w-100">Start Free Trial</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="plan-card featured reveal-in">
-              <span class="plan-badge">Popular</span>
-              <h3>Professional</h3>
-              <div class="plan-price">₹4,999<span>/month</span></div>
-              <p>For growing rental and fleet companies that need duty, billing, and operations control.</p>
-              <ul class="plan-list">
-                <li>Everything in Starter</li>
-                <li>GST billing and invoices</li>
-                <li>Duty operations and supplier flow</li>
-              </ul>
-              <a href="#contact" class="btn btn-primary w-100">Book Demo</a>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="plan-card reveal-in">
-              <h3>Enterprise</h3>
-              <div class="plan-price">Custom<span> pricing</span></div>
-              <p>For large transport businesses needing tailored workflows, analytics, and dedicated support.</p>
-              <ul class="plan-list">
-                <li>Advanced analytics</li>
-                <li>Multi-branch access</li>
-                <li>Priority onboarding</li>
-              </ul>
-              <a href="#contact" class="btn btn-outline-primary w-100">Talk to Sales</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="testimonial-section section-space" >
-      <div class="container">
-        <div class="row g-4 align-items-start">
-          <div class="col-lg-5">
-            <h2 class="section-title">Trusted by Fleet Leaders</h2>
-            <p class="section-subtitle left-subtitle">
-              Real-world feedback from taxi operators and fleet owners who have automated their operations with FleetNest.
-            </p>
-          </div>
-          <div class="col-lg-7">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <div class="quote-card reveal-in">
-                  <p>"FleetNest helped us manage drivers, duty charts, and billing in one place. Our daily operations are much faster now."</p>
-                  <strong>Akash Travels</strong>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="quote-card reveal-in">
-                  <p>"We reduced manual work across bookings and invoices, and the reporting gives us a much clearer view of our business."</p>
-                  <strong>CityRide Rentals</strong>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section section-space">
-      <div class="container">
-        <div class="faq-shell">
-          <div class="faq-heading reveal-in">
-            <span class="hero-kicker">Support Answers</span>
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">
-              Everything operators, rental companies, and fleet teams usually ask before getting started.
-            </p>
-          </div>
-
-          <div class="faq-list">
-            <article class="faq-item reveal-in active">
-              <button class="faq-question" type="button" aria-expanded="true">
-                <span>How does FleetNest help manage a car admin panel?</span>
-                <span class="faq-icon"></span>
-              </button>
-              <div class="faq-answer" style="max-height: 220px;">
-                <div class="faq-answer-inner">
-                  FleetNest centralizes bookings, driver assignments, vehicle records, duty scheduling, invoices, and reports into one clean admin dashboard so your operations team can work faster with less manual tracking.
-                </div>
-              </div>
+          <div class="platform-panels">
+            <article class="platform-panel active" id="panel-operations" role="tabpanel" aria-labelledby="tab-operations" data-platform-panel="operations">
+              <div class="panel-copy"><span class="panel-label">LIVE CONTROL</span><h3>See every duty at the right stage.</h3><p>Filter duties by status and date, then move from booking through assignment, dispatch and closure without losing context.</p><ul><li><span>✓</span>Duty booking and operations</li><li><span>✓</span>Status and date filtering</li><li><span>✓</span>Driver and vehicle allocation</li></ul></div>
+              <div class="template-card operations-template" aria-label="Concept Duty Operations interface"><div class="template-top"><span><i></i>Duty board</span><button type="button">+ Add duty</button></div><div class="template-tabs"><b>All</b><span>Booked</span><span>Assigned</span><span>Dispatched</span><span>Closed</span></div><div class="template-row"><i class="route-icon">A</i><div><strong>Airport transfer</strong><small>Today · 09:30 · Sedan</small></div><em class="concept-pill blue-pill">Assigned</em></div><div class="template-row"><i class="route-icon mint">B</i><div><strong>Outstation duty</strong><small>Today · 08:45 · SUV</small></div><em class="concept-pill green-pill">In progress</em></div><div class="template-row"><i class="route-icon soft">C</i><div><strong>Local package</strong><small>Today · 07:20 · Sedan</small></div><em class="concept-pill gray-pill">Closed</em></div><small class="template-note">Original interface concept — no customer data</small></div>
             </article>
-
-            <article class="faq-item reveal-in">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can I manage GST billing and purchase invoices directly?</span>
-                <span class="faq-icon"></span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  Yes. The platform supports GST billing workflows, purchase invoice records, supplier tracking, and financial reporting so your admin team can reduce manual entry and improve compliance.
-                </div>
-              </div>
+            <article class="platform-panel" id="panel-insights" role="tabpanel" aria-labelledby="tab-insights" data-platform-panel="insights" hidden>
+              <div class="panel-copy"><span class="panel-label">BUSINESS CLARITY</span><h3>Reports that start with live operations.</h3><p>Use a single report dashboard to filter operational and financial records, with Customer Ledger access available on higher plans.</p><ul><li><span>✓</span>Summary and detailed report tables</li><li><span>✓</span>Flexible date filters</li><li><span>✓</span>Customer Ledger on Popular and above</li></ul></div>
+              <div class="template-card reports-template" aria-label="Concept FleetNest Reports dashboard"><div class="template-top"><span><i></i>Reports dashboard</span><button type="button">This month⌄</button></div><div class="report-metrics"><span><small>Duties</small><strong>248</strong><em>+12%</em></span><span><small>Vehicles used</small><strong>24</strong><em>+4%</em></span><span><small>Collection</small><strong>84%</strong><em>+7%</em></span></div><div class="report-chart"><div class="chart-bars" aria-hidden="true"><i style="height:32%"></i><i style="height:48%"></i><i style="height:42%"></i><i style="height:66%"></i><i style="height:58%"></i><i style="height:78%"></i><i style="height:88%"></i></div><div class="chart-labels"><span>Week 1</span><span>Week 2</span><span>Week 3</span><span>Week 4</span></div></div><small class="template-note">Original reporting concept — sample values only</small></div>
             </article>
-
-            <article class="faq-item reveal-in">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Is FleetNest suitable for taxi operators and rental companies?</span>
-                <span class="faq-icon"></span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  It is built for taxi operators, travel agencies, car rental companies, and transport businesses that need one admin platform for bookings, fleet movement, duty control, and reporting.
-                </div>
-              </div>
-            </article>
-
-            <article class="faq-item reveal-in">
-              <button class="faq-question" type="button" aria-expanded="false">
-                <span>Can my team access it from mobile and desktop?</span>
-                <span class="faq-icon"></span>
-              </button>
-              <div class="faq-answer">
-                <div class="faq-answer-inner">
-                  Yes. The experience is designed to work across desktop screens, tablets, and mobile devices so managers and dispatch teams can stay connected wherever they are.
-                </div>
-              </div>
+            <article class="platform-panel" id="panel-plans" role="tabpanel" aria-labelledby="tab-plans" data-platform-panel="plans" hidden>
+              <div class="panel-copy"><span class="panel-label">SIMPLE GROWTH</span><h3>Choose a plan that matches your fleet.</h3><p>Start free, increase vehicles and monthly duties as you grow, and keep a clear view of what every plan includes.</p><ul><li><span>✓</span>Plans from ₹0 to ₹1,999/month</li><li><span>✓</span>Transparent vehicle and duty limits</li><li><span>✓</span>Custom Enterprise option</li></ul></div>
+              <div class="template-card plans-template" aria-label="Concept FleetNest plan selector"><div class="template-top"><span><i></i>Choose your plan</span><small>Monthly · +18% GST</small></div><div class="mini-plan-grid"><span><b>Free</b><strong>₹0</strong><small>1 vehicle</small></span><span><b>Basic</b><strong>₹199</strong><small>1 vehicle</small></span><span class="selected"><em>POPULAR</em><b>Popular</b><strong>₹999</strong><small>3 vehicles</small></span><span><b>Pro</b><strong>₹1,999</strong><small>6 vehicles</small></span></div><small class="template-note">Original pricing template using current FleetNest plan data</small></div>
             </article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-form-section section-space" id="contact">
-      <div class="container">
-        <div class="form-shell reveal-in">
-          <div class="text-center form-head">
-            <span class="hero-kicker">Get Started</span>
-            <h2 class="section-title">Ready to modernize?</h2>
-          </div>
-
-          <form class="lead-form">
-            <div class="row g-4">
-              <div class="col-md-6">
-                <label for="firstName" class="form-label">First Name *</label>
-                <input id="firstName" type="text" name="firstname" class="form-control custom-field" required>
-              </div>
-              <div class="col-md-6">
-                <label for="lastName" class="form-label">Last Name *</label>
-                <input id="lastName" type="text" name="lastname" class="form-control custom-field" required>
-              </div>
-              <div class="col-12">
-                <label for="companyName" class="form-label">Company Name *</label>
-                <input id="companyName" type="text" name="comapny_name" class="form-control custom-field" required>
-              </div>
-              <div class="col-12">
-                <label for="emailAddress" class="form-label">Email Address *</label>
-                <input id="emailAddress" type="email" name="email" class="form-control custom-field" placeholder="email@company.com" required>
-              </div>
-              <div class="col-12">
-                <label class="form-label">Fleet Size *</label>
-                <div class="fleet-options">
-                  <label class="fleet-option">
-                    <input type="radio" name="fleet-size" checked>
-                    <span>1-10 vehicles</span>
-                  </label>
-                  <label class="fleet-option">
-                    <input type="radio" name="fleet-size">
-                    <span>11-50 vehicles</span>
-                  </label>
-                  <label class="fleet-option">
-                    <input type="radio" name="fleet-size">
-                    <span>51-200 vehicles</span>
-                  </label>
-                  <label class="fleet-option">
-                    <input type="radio" name="fleet-size">
-                    <span>201+ vehicles</span>
-                  </label>
-                </div>
-              </div>
-              <div class="col-12">
-                <label for="messageBox" class="form-label">Message</label>
-                <textarea id="messageBox" name="message" class="form-control custom-field custom-area" rows="5" placeholder="How can we help you?"></textarea>
-              </div>
-              <div class="col-12">
-                <button type="submit" class="btn btn-primary btn-strong w-100 submit-btn">Get Started</button>
-              </div>
-            </div>
-          </form>
+    <section class="section solutions-section" id="solutions">
+      <div class="section-shell">
+        <div class="section-heading split-heading compact-heading"><div><span class="section-kicker">EVERYTHING YOUR TEAM NEEDS</span><h2>Built around the real work.</h2></div><p>Purpose-built tools for fleet teams—connected by a single record of every customer, duty, vehicle and transaction.</p></div>
+        <div class="bento-grid feature-module-grid">
+          <article class="bento-card bento-wide"><div class="bento-icon"><span>▦</span></div><h3>Masters</h3><p>Build a reliable operating foundation with structured records for every person, vehicle and commercial rule.</p><div class="module-list"><span>Vehicles</span><span>Drivers</span><span>Customers</span><span>Suppliers</span><span>Vehicle Groups</span><span>Duty Types</span><span>Taxes</span><span>Employees</span></div></article>
+          <article class="bento-card"><div class="bento-icon green-icon"><span>◎</span></div><h3>Duty Management</h3><p>Create bookings and manage each duty through the full operations workflow.</p><div class="module-list"><span>Duty Booking</span><span>Duty Operations</span></div></article>
+          <article class="bento-card"><div class="bento-icon amber-icon"><span>₹</span></div><h3>Expenses &amp; Billing</h3><p>Track expenses, customer invoices, receipts, and credit or debit notes.</p><div class="module-list"><span>Expenses</span><span>Billing Management</span><span>Receipts</span></div></article>
+          <article class="bento-card"><div class="bento-icon violet-icon"><span>⇄</span></div><h3>Purchase Management</h3><p>Keep supplier-side invoices, payments and adjustments connected to operations.</p><div class="module-list"><span>Purchase Invoice</span><span>Purchase Payment</span><span>Credit / Debit Notes</span></div></article>
+          <article class="bento-card"><div class="bento-icon rose-icon"><span>◫</span></div><h3>Reports &amp; Ledger</h3><p>Filter performance records and review customer account activity from one reporting area.</p><div class="module-list"><span>Reports Dashboard</span><span>Customer Ledger</span></div></article>
+          <article class="bento-card bento-wide"><div class="bento-icon"><span>⚙</span></div><h3>Administration</h3><p>Manage company setup, team access and your FleetNest subscription as the business grows.</p><div class="module-list"><span>Companies</span><span>Roles &amp; Permissions</span><span>Subscription</span><span>Bank Profiles</span></div></article>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer">
-      <div class="container">
-        <div class="footer-grid">
-          <div class="footer-brand-col">
-            <a class="brand-wrap footer-brand" href="#home">
-              <div class="brand-logo">FN</div>
-              <div class="brand-copy">
-                <span>FleetNest</span>
-              </div>
-            </a>
-            <p class="footer-copy">
-              Streamline your fleet operations with FleetNest. The all-in-one cloud platform for taxi operators and fleet owners.
-            </p>
-          </div>
+    <section class="section workflow-section">
+      <div class="section-shell workflow-shell">
+        <div class="workflow-copy"><span class="section-kicker light-kicker">FROM REQUEST TO REVENUE</span><h2>One workflow.<br><em>No loose ends.</em></h2><p>Every step adds to the same business record, so operations and finance always work with the same truth.</p><a class="btn button" href="#contact">See FleetNest in action <span>↗</span></a></div>
+        <ol class="workflow-list">
+          <li><span>01</span><div><h3>Capture the booking</h3><p>Record exactly what the customer needs with the right package, route and commercial terms.</p></div></li>
+          <li><span>02</span><div><h3>Run the duty</h3><p>Allocate, communicate, track and validate the journey with clean digital handoffs.</p></div></li>
+          <li><span>03</span><div><h3>Close the business</h3><p>Review charges, bill the customer, record supplier costs and understand profitability.</p></div></li>
+        </ol>
+      </div>
+    </section>
 
-          <div class="footer-contact-col">
-            <h3>Contact</h3>
-            <a href="mailto:demo@fleetnest.io">demo@fleetnest.io</a>
-            <a href="tel:+4402079460000">+44 (0) 20 7946 0000</a>
-            <p>123 Fleet Management Way, London, UK</p>
-          </div>
-
-          <div class="footer-social-col">
-            <h3>Connect</h3>
-            <div class="social-links">
-              <a href="#" aria-label="Facebook">Fb</a>
-              <a href="#" aria-label="Instagram">Ig</a>
-              <a href="#" aria-label="YouTube">Yt</a>
-              <a href="#" aria-label="X">X</a>
-              <a href="#" aria-label="LinkedIn">In</a>
-              <a href="#" aria-label="TikTok">Tk</a>
-            </div>
-          </div>
+    <section class="section pricing-section" id="pricing">
+      <div class="section-shell">
+        <div class="section-heading centered-heading"><span class="section-kicker">SIMPLE PRICING</span><h2>Start free.<br><em>Scale when you are ready.</em></h2><p>Monthly plans with clear vehicle and duty limits. Pricing shown below excludes 18% GST.</p></div>
+        <div class="pricing-grid">
+          <article class="price-card"><div class="price-head"><h3>Free</h3><p>Explore the core workflow before upgrading.</p></div><div class="price"><strong>₹0</strong><span>/ month</span></div><a class="btn button button-outline" href="#contact">Get started</a><ul><li>1 vehicle</li><li>15 duties per month</li><li>Summary reports</li><li>Core fleet operations</li></ul></article>
+          <article class="price-card"><div class="price-head"><h3>Basic</h3><p>For a solo operator running a steady monthly schedule.</p></div><div class="price"><strong>₹199</strong><span>/ month</span></div><a class="btn button button-outline" href="#contact">Choose Basic</a><ul><li>1 vehicle</li><li>45 duties per month</li><li>Vehicle report table</li><li>Core fleet operations</li></ul></article>
+          <article class="price-card featured-price"><span class="popular-label">MOST POPULAR</span><div class="price-head"><h3>Popular</h3><p>For a growing fleet that needs complete reporting.</p></div><div class="price"><strong>₹999</strong><span>/ month</span></div><a class="btn button" href="#contact">Choose Popular <span>↗</span></a><ul><li>3 vehicles</li><li>200 duties per month</li><li>All report tables</li><li>Customer Ledger included</li></ul></article>
+          <article class="price-card"><div class="price-head"><h3>Pro</h3><p>For active teams with more vehicles and duty volume.</p></div><div class="price"><strong>₹1,999</strong><span>/ month</span></div><a class="btn button button-outline" href="#contact">Choose Pro</a><ul><li>6 vehicles</li><li>300 duties included</li><li>Overage support</li><li>All reports and ledger</li></ul></article>
+          <article class="price-card enterprise-price"><div class="price-head"><h3>Enterprise</h3><p>For larger fleets that need custom limits and onboarding.</p></div><div class="price"><strong>Custom</strong></div><a class="btn button button-outline" href="#contact">Talk to sales</a><ul><li>Custom vehicle limits</li><li>Custom duty limits</li><li>Full reports and ledger</li><li>Priority support and onboarding</li></ul></article>
         </div>
+        <p class="pricing-note">Current FleetNest monthly plans. 18% GST is additional. <a href="#contact">Questions? Talk to our team →</a></p>
+      </div>
+    </section>
 
-        <div class="footer-bottom">
-          <p>© 2026 FleetNest. All rights reserved.</p>
-          <div class="footer-legal">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-          </div>
+    <section class="section faq-section">
+      <div class="section-shell faq-shell">
+        <div class="faq-copy"><span class="section-kicker">GOOD QUESTIONS</span><h2>Everything you need to know before the demo.</h2><p>Still deciding whether FleetNest fits your workflow? Bring your current process to the call—we’ll map it together.</p><a href="mailto:fleetnest07@gmail.com">fleetnest07@gmail.com <span>↗</span></a></div>
+        <div class="faq-list">
+          <details open><summary>Who is FleetNest built for?<span></span></summary><p>FleetNest is designed for taxi operators, car rental businesses, travel agencies and corporate fleet teams that need one system for bookings, duties, fleet, billing and reporting.</p></details>
+          <details><summary>Can we manage invoices, receipts and supplier purchases?<span></span></summary><p>Yes. FleetNest includes Billing Management, Receipts, Purchase Invoices, Purchase Payments, and credit or debit notes.</p></details>
+          <details><summary>Can our dispatch team use it on mobile?<span></span></summary><p>FleetNest is designed to be responsive across desktop, tablet and mobile, so managers and dispatch teams can stay connected wherever they work.</p></details>
+          <details><summary>Which plans include Customer Ledger?<span></span></summary><p>Customer Ledger is included with Popular, Pro and Enterprise plans. Free and Basic provide more limited reporting access.</p></details>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-orb orb-one" aria-hidden="true"></div><div class="contact-orb orb-two" aria-hidden="true"></div>
+      <div class="section-shell contact-grid">
+        <div class="contact-copy"><span class="section-kicker light-kicker">LET’S MOVE YOUR BUSINESS FORWARD</span><h2>See what a calmer fleet operation feels like.</h2><p>Tell us a little about your fleet. We’ll shape the demo around how your team books, dispatches and bills today.</p><div class="contact-points"><span><i>✓</i> A focused 30-minute product walkthrough</span><span><i>✓</i> Your questions, your workflows, no hard sell</span><span><i>✓</i> A clear next-step plan for your team</span></div></div>
+        <form class="contact-form" action="mailto:fleetnest07@gmail.com" method="post" enctype="text/plain">
+          <div class="form-heading"><div><span>Book a demo</span><h3>Let’s find a better way to run your fleet.</h3></div><span class="form-arrow">↗</span></div>
+          <div class="form-row"><label>First name<input class="form-control" type="text" name="First name" autocomplete="given-name" placeholder="Akash" required></label><label>Last name<input class="form-control" type="text" name="Last name" autocomplete="family-name" placeholder="Sharma" required></label></div>
+          <label>Work email<input class="form-control" type="email" name="Email" autocomplete="email" placeholder="you@company.com" required></label>
+          <div class="form-row"><label>Company<input class="form-control" type="text" name="Company" autocomplete="organization" placeholder="Your company" required></label><label>Fleet size<select class="form-select" name="Fleet size" required><option value="">Select</option><option>1–10 vehicles</option><option>11–50 vehicles</option><option>51–200 vehicles</option><option>201+ vehicles</option></select></label></div>
+          <label>What would you like to improve?<textarea class="form-control" name="Message" rows="3" placeholder="Bookings, dispatch, billing, reports…"></textarea></label>
+          <button class="btn button form-submit" type="submit">Request your demo <span>↗</span></button>
+          <p class="form-note">Submitting opens your email app so you can review the message before sending.</p>
+        </form>
+      </div>
+    </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>FleetNest</span></a><p>One calm command center for your entire fleet business.</p></div>
+      <div><strong>Platform</strong><a href="#platform">Operations</a><a href="#platform">Finance</a><a href="#platform">Insights</a><a href="#pricing">Pricing</a></div>
+      <div><strong>Solutions</strong><a href="#solutions">Taxi operators</a><a href="#solutions">Car rentals</a><a href="#solutions">Travel agencies</a><a href="#solutions">Corporate fleets</a></div>
+      <div><strong>Company</strong><a href="#company">About</a><a href="#contact">Contact</a><a href="mailto:fleetnest07@gmail.com">Email us</a><a href="tel:+918451807915">+91 84518 07915</a></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 FleetNest. All rights reserved.</span><div><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
